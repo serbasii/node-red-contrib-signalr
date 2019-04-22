@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('signalr',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            uri: {value:"http://localhost:8087/rt-online-user?client=node-red"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name ||"signalr";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="signalr">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-uri"><i class="icon-globe"></i> URI</label>
+        <input type="text" id="node-input-uri" placeholder="http://localhost:8087/rt-online-user?client=node-red" />
+      </div>
+</script>
+
+<script type="text/x-red" data-help-name="signalr">
+    <p>A simple node that converts the message payloads into all lower-case characters</p>
+</script>

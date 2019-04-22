@@ -1,0 +1,15 @@
+{
+  "name": "node-red-contrib-signalr",
+  "version": "1.1.0",
+  "author": {
+    "name": "serkanerbasi"
+  },
+  "node-red": {
+    "nodes": {
+      "signalr": "signalr.js"
+    }
+  },
+  "dependencies": {
+    "@aspnet/signalr": "^1.1.0"
+  }
+}
